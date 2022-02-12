@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Camera Shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Asadulla Ahmed" />
+    <meta name="description" content="Bootstrap eCommarce website with full responsive,camera shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="header" class="d-flex align-items-center">
+        <div class="headerArea container d-flex  align-items-center">
+            <div class="headerLeft d-flex align-items-center">
+                <img src="img/logoImg.png" alt="logo">
+                <h1>photonics</h1>
+            </div>
+            <div class="headerRight d-flex justify-content-end align-items-center">
+                <div class="headerRightInfo">
+                    <p style="color: #7b8099;">Toll Free : <span style="color: #000a52; font-weight: bold;">+961 3
+                            336662</span></p>
+                    <ul class="headerMenu d-flex justify-content-end">
+                        <li class="headerMenuList"><a href="#">Login</a></li>
+                        <li class="headerMenuList"><a href="#">My Account</a></li>
+                        <li class="headerMenuList"><a href="#">Cart</a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 3rem;" class="headerRighSearch">
+                    <form class="d-flex justify-content-center" method="get">
+                        <input id="searchArea" type="search" placeholder="Quick Search">
+                        <button type="submit" class="bi bi-search" onclick="work()"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <span class="SideMenu" ><i style= "font-size: 2.5rem;" class="bi bi-list"></i></span>
+        <nav class="navbar">
+            <menu class="container navList d-flex justify-content-start">
+                <li class="navItem"><a href="#">Featured</a></li>
+                <li class="navItem"><a href="#">Cameras</a>
+                    <div class="subMenu w-100">
+                        <ul class="subMenuList container d-flex w-100 align-items-center">
+                            <li class="subMenuItem"><a href="#"><img src="img/cameraIcon.png" alt="camera"></a></li>
+                            <li class="subMenuItem"><a href="#">Digital SLRS</a></li>
+                            <li class="subMenuItem"><a href="#">Film Camera</a></li>
+                            <li class="subMenuItem"><a href="#">Lenses</a></li>
+                            <li class="subMenuItem"><a href="#">Batteries & Power</a></li>
+                            <li class="subMenuItem"><a href="#">Bag & Cases</a></li>
+                            <li class="subMenuItem"><a href="#">Memory Cards & Film</a></li>
+                            <li class="subMenuItem"><a href="#">Filters</a></li>
+                            <li class="subMenuItem"><a href="#">Flashes & On Camera Lightining</a></li>
+                            <li class="subMenuItem"><a href="#">Software</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem"><a href="#">Accessories</a></li>
+                <li class="navItem"><a href="#">Bags/Cases</a></li>
+                <li class="navItem"><a href="#">Batteries/Power</a></li>
+                <li class="navItem"><a href="#">Electronics</a>
+                    <div class="subMenu w-100">
+                        <ul class="subMenuList container d-flex w-100 align-items-center">
+                            <li class="subMenuItem"><a href="#">Digital SLRS</a></li>
+                            <li class="subMenuItem"><a href="#">Film Camera</a></li>
+                            <li class="subMenuItem"><a href="#">Lenses</a></li>
+                            <li class="subMenuItem"><a href="#">Batteries & Power</a></li>
+                            <li class="subMenuItem"><a href="#">Film Camera</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem"><a href="#">Filters</a></li>
+                <li class="navItem"><a href="#">Lighting/Studio</a></li>
+                <li class="navItem"><a href="#">Memory</a>
+                    <div class="subMenu w-100">
+                        <ul class="subMenuList container d-flex w-100 align-items-center">
+                            <li class="subMenuItem"><a href="#">Digital SLRS</a></li>
+                            <li class="subMenuItem"><a href="#">Film Camera</a></li>
+                            <li class="subMenuItem"><a href="#">Lenses</a></li>
+                            <li class="subMenuItem"><a href="#">Batteries & Power</a></li>
+                            <li class="subMenuItem"><a href="#">Bag & Cases</a></li>
+                            <li class="subMenuItem"><a href="#">Software</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem"><a href="#">Printers</a></li>
+                <li class="navItem"><a href="#">Tripods</a></li>
+                <li class="navItem"><a href="#">video</a></li>
+            </menu>
+        </nav>
+        <div class="second-section d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/CarouselCamera.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/img2.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/img3.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/img4.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/img-5.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sliding">
+                                <div class="carousel-content d-flex flex-column justify-content-center align-items-end">
+                                    <h2>nikon just announced <br /> new nikkor 18 - 300mm lens</h2>
+                                    <span
+                                        style="display: inline-flex; align-self: start; font-size: 16pt; margin: 0 0 20px 7rem; color: #3f6a7a;">&
+                                        the Coolpix S810c</span>
+                                    <div style="margin-left: 7rem;" class="slideButton d-flex align-self-start">
+                                        <button style="width: 8rem; margin-right: 10px;"
+                                            class="categorybodyButton">Order Now</button>
+                                        <button style="width: 8rem;" class="categorybodyButton">Lern More</button>
+                                    </div>
+                                </div>
+                                <div class="carouselImg"><img src="img/img-6.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                class="bi bi-chevron-left"></i></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                class="bi bi-chevron-right"></i></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="third-section">
+            <div class="category container d-flex">
+                <div class="categoryMenu d-flex flex-column align-items-start">
+                    <h3 style="color: #333333; margin-bottom: 15px;">Featured.</h3>
+                    <ul class="categoryList">
+                        <li class="categoryItem"><a href="">Camera</a></li>
+                        <li class="categoryItem"><a href="">Accessories</a></li>
+                        <li class="categoryItem"><a href="">Bags/Cases</a></li>
+                        <li class="categoryItem"><a href="">Batteries/Power</a></li>
+                        <li class="categoryItem"><a href="">Electronics</a></li>
+                        <li class="categoryItem"><a href="">Filters</a></li>
+                        <li class="categoryItem"><a href="">Lighting/Studio</a></li>
+                        <li class="categoryItem"><a href="">Memory</a></li>
+                        <li class="categoryItem"><a href="">Printers</a></li>
+                        <li class="categoryItem"><a href="">Tripods</a></li>
+                        <li class="categoryItem"><a href="">Video</a></li>
+                    </ul>
+                </div>
+                <div class="catergorybody">
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-1.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-2.jpg" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight d-flex flex-column">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-3.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-4.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-5.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="circle">
+                                <span class="catPrice" style="font-weight: bold;">1,800<br /> USD</span>
+                                <span class="catOffer"><i style="font-weight: bold; font-size: 10pt;">FREE</i>
+                                    <i style="font-size: 7pt;">SHIPPING</i>
+                                </span>
+                            </p>
+                            <img src="img/img-6.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="categorybutton d-flex w-100 justify-content-center align-items-center">
+                        <button class="categorybodyButton d-flex justify-content-center align-items-center">Browse all
+                            Cameras</button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-section">
+            <div class="addProduct container">
+                <div class="addProductTitle">
+                    <h3 style="color: #333333; margin-bottom: 15px;">New Items</h3>
+                </div>
+                <div class="addProductList">
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="round">
+                                <span class="newProduct"><i
+                                        style="font-weight: bold; font-size: 10pt; font-style: normal; color: #fff">New
+                                        !</i></span>
+                            </p>
+                            <img src="img/img-1.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="round">
+                                <span class="newProduct"><i
+                                        style="font-weight: bold; font-size: 10pt; font-style: normal; color: #fff">New
+                                        !</i></span>
+                            </p>
+                            <img src="img/img2.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="round">
+                                <span class="newProduct"><i
+                                        style="font-weight: bold; font-size: 10pt; font-style: normal; color: #fff">New
+                                        !</i></span>
+                            </p>
+                            <img src="img/img3.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                    <div class="categorybodyItem">
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <p class="round">
+                                <span class="newProduct"><i
+                                        style="font-weight: bold; font-size: 10pt; font-style: normal; color: #fff">New
+                                        !</i></span>
+                            </p>
+                            <img src="img/img4.png" alt="product">
+                        </div>
+                        <div class="des d-flex justify-content-between">
+                            <div class="desLeft d-flex flex-column">
+                                <span>Canon 500 F4.0</span>
+                                <span>L IS II EF AF USM Lens</span>
+                            </div>
+                            <div class="desRight">in stock</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addProductBottom">
+                    <div class="addProductBottomLeft">
+                        <h3 style="color: #333333; margin-bottom: 15px;">Week's Special Offer.</h3>
+                        <div style="padding: 10px;" class="addProductBottomLeftArea">
+                            <div>
+                                <div class="d-flex justify-content-center"><img src="img/imgP-1.png" alt="product">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span style="margin-left: 18px; color: #5a626a;"
+                                        class="d-flex justify-content-start">Canon 70D</span>
+                                    <span style="margin-right: 30px;" class="d-flex justify-content-end"><img
+                                            src="img/plus.png" alt="plus"></span>
+                                    <span style="color: #5a626a;" class="d-flex justify-content-end">Bag</span>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column justify-content-between">
+                                    <span style="margin-top: 30px;" class="d-flex justify-content-center"><img
+                                            src="img/plus.png" alt="plus"></span>
+                                    <span style="margin-bottom: 30px;"><img src="img/imgP-2.png" alt="product"></span>
+                                </div>
+                                <div>
+                                    <span><img src="img/imgP-3.png" alt="product"></span>
+                                    <span style="color: #5a626a;" class="d-flex flex-column"><i
+                                            style="font-style: normal;">Canon Lens</i><i style="font-style: normal;">10
+                                            - 22mm</i></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="h-100 d-flex flex-column justify-content-between align-items-center">
+                                    <div class="d-flex flex-column justify-content-center h-50">
+                                        <strong
+                                            style="margin-top: 10px; font-size: 17pt;color: #cd1919;"><s>$3,000</s></strong>
+                                        <strong style="font-size: 25pt;color: #99c873;">$1,999</strong>
+                                    </div>
+                                    <div class="orderButton w-75 h-50 d-flex flex-column justify-content-start">
+                                        <button class="categorybodyButton ProB">Details</button>
+                                        <button class="categorybodyButton ProB">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addProductBottomRight">
+                        <h3 style="color: #333333; margin-bottom: 15px;">Adv.</h3>
+                        <div class="addProductBottomRightArea d-flex justify-content-center align-items-center"
+                            style="background-color: #f6f6f6;"><img src="" alt="Advertisement Area"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex flex-column">
+            <div style="padding-bottom: 20px;" class="footerUp d-flex justify-content-between">
+                <div class="footerDiv d-flex flex-column">
+                    <img src="img/imgF-1.png" alt="bizrate">
+                </div>
+                <div class="footerDiv d-flex flex-column">
+                    <img src="img/imgF-2.png" alt="COMODO">
+                </div>
+                <div class="footerDiv d-flex flex-column">
+                    <img src="img/imgF-3.png" alt="Shopping">
+                </div>
+                <div class="footerDiv d-flex flex-column">
+                    <img src="img/imgF-4.png" alt="grabber">
+                </div>
+            </div>
+            <div style="padding: 30px 0" class="footerDown d-flex justify-content-between">
+                <div class="footerDes d-flex flex-column">
+                    <p style="margin-left: 5px;">Copyright &copy; <i style="font-style: normal;" id="currentYear">22</i> Photonics. All rights reserved.</p>
+                    <ul class="footerTab d-flex">
+                        <li><a href="">Home .</a></li>
+                        <li><a href="">Store Policies .</a></li>
+                        <li><a href="">Driving Directions .</a></li>
+                        <br />
+                        <li><a href="">Privacy Policy .</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footerSocial">
+                    <span style="color: #00bbf5; border: 2px solid #00bbf5" class="bi bi-twitter"></span>
+                    <span style="color: #3b5999; border: 2px solid #3b5999" class="bi bi-facebook"></span>
+                    <span style="color: #fe0000; border: 2px solid #fe0000" class="bi bi-youtube"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
